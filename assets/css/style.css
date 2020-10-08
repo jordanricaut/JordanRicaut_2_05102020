@@ -6,8 +6,8 @@
 }
 
 body {
-  background-color: #F2F2F2;
   font-family: "Raleway", serif;
+  background-color: white;
 }
 header {
   height: 90px;
@@ -56,7 +56,41 @@ list-style-type: none;
   color: #0065FC;
   font-weight: bold;
 }
-
+section {
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.search i {
+  border: 1px ;
+}
+.search #bouton {
+  width: 100px;
+  background-color: #0065fc;
+  height: 50px;
+  color: white;
+  border-radius: 0px 10px 10px 0px;
+  border: #0065fc;
+  margin-left:-5px;
+}
+.search #champ {
+  width: 230px;
+  height: 50px;
+  border: solid #f2f2f2;
+}
+/*.fas.fa-map-marker-alt {
+  padding: 10px;
+  background-color: #f2f2f2;
+  height: 20px;
+  width: 10px;
+  border-radius: 10px 0px 0px 10px;
+  margin-right: -5px;
+}*/
+.fas.fa-map-marker-alt {
+  background-color: #f2f2f2;
+  border-radius: 10px 0px 0px 10px;
+  padding: 15.5px 10px 18px 15px;
+  margin-right:-5px;
+}
 @media all and (max-width:1440px)
 {
   .menu {
