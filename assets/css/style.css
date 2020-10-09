@@ -9,6 +9,13 @@ body {
   font-family: "Raleway", serif;
   background-color: white;
 }
+/*
+██   ██ ███████  █████  ██████  ███████ ██████
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+███████ █████   ███████ ██   ██ █████   ██████
+██   ██ ██      ██   ██ ██   ██ ██      ██   ██
+██   ██ ███████ ██   ██ ██████  ███████ ██   ██
+*/
 header {
   height: 90px;
   display:flex;
@@ -19,23 +26,23 @@ header {
   margin-left: 50px;
   margin-top: 50px;
 }
-
-                             /*
-  _ __ ___   ___ _ __  _   _
- | '_ ` _ \ / _ \ '_ \| | | |
- | | | | | |  __/ | | | |_| |
- |_| |_| |_|\___|_| |_|\__,_|
-                              */
-
+/*
+███    ███ ███████ ███    ██ ██    ██
+████  ████ ██      ████   ██ ██    ██
+██ ████ ██ █████   ██ ██  ██ ██    ██
+██  ██  ██ ██      ██  ██ ██ ██    ██
+██      ██ ███████ ██   ████  ██████
+*/
 .menu {
   margin-top: 50px;
   margin-left: 60%;
 }
 .menu ul {
-list-style-type: none;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
 }
 .menu li {
-  display: inline;
   margin-right: 60px;
   padding: 0px 20px 0 20px;
 }
@@ -56,17 +63,31 @@ list-style-type: none;
   color: #0065FC;
   font-weight: bold;
 }
+/*
+███████ ███████  ██████ ████████ ██  ██████  ███    ██
+██      ██      ██         ██    ██ ██    ██ ████   ██
+███████ █████   ██         ██    ██ ██    ██ ██ ██  ██
+     ██ ██      ██         ██    ██ ██    ██ ██  ██ ██
+███████ ███████  ██████    ██    ██  ██████  ██   ████
+*/
 section {
   margin-top: 40px;
   margin-left: 50px;
 }
+/*
+██████  ███████  ██████ ██   ██ ███████ ██████   ██████ ██   ██ ███████
+██   ██ ██      ██      ██   ██ ██      ██   ██ ██      ██   ██ ██
+██████  █████   ██      ███████ █████   ██████  ██      ███████ █████
+██   ██ ██      ██      ██   ██ ██      ██   ██ ██      ██   ██ ██
+██   ██ ███████  ██████ ██   ██ ███████ ██   ██  ██████ ██   ██ ███████
+*/
 .search i {
   border: 1px ;
 }
 .search #bouton {
   width: 100px;
   background-color: #0065fc;
-  height: 50px;
+  height: 40px;
   color: white;
   border-radius: 0px 10px 10px 0px;
   border: #0065fc;
@@ -74,23 +95,113 @@ section {
 }
 .search #champ {
   width: 230px;
-  height: 50px;
+  height: 40px;
   border: solid #f2f2f2;
 }
-/*.fas.fa-map-marker-alt {
-  padding: 10px;
-  background-color: #f2f2f2;
-  height: 20px;
-  width: 10px;
-  border-radius: 10px 0px 0px 10px;
-  margin-right: -5px;
-}*/
 .fas.fa-map-marker-alt {
   background-color: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
-  padding: 15.5px 10px 18px 15px;
+  padding: 10.5px 10px 13px 15px;
   margin-right:-5px;
 }
+.fas.fa-info {
+  color: #0065fc;
+  margin-left:8px;
+  margin-top: 2px;
+}
+.cercle {
+  height: 22px;
+  width:22px;
+  border: 2px solid #f2f2f2;
+  border-radius: 50%;
+}
+.filtres {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+}
+.filtres h4 {
+  margin-top: 25px;
+}
+.filtres ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+.filtres li {
+  margin-right: 20px;
+  border: solid 2px #F2F2F2;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+}
+.filtres p {
+  margin-top: 8px;
+  margin-bottom: 0px;
+  margin-right: 10px;
+  margin-left: 5px;
+}
+.fas.fa-money-bill-wave {
+  margin-left: 8px;
+  margin-top: 9px;
+}
+.fas.fa-child {
+  margin-left: 11px;
+  margin-top: 10px;
+}
+.fas.fa-dog {
+  margin-left: 8px;
+  margin-top: 9px;
+}
+.fas.fa-heart {
+  margin-left: 9px;
+  margin-top: 10px;
+}
+.filtres .fas {
+    color: #0065fc;
+}
+.filtres .cercle {
+  border: solid 0px #F2F2F2;
+  background-color: #DEEBFF;
+  height:35px;
+  width:35px;
+  border-radius: 50%;
+}
+.infos {
+  display: flex;
+  flex-direction: row;
+    margin-top: 15px;
+}
+.infos p {
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+███    ███  ██████  ██████  ██ ██      ███████
+████  ████ ██    ██ ██   ██ ██ ██      ██
+██ ████ ██ ██    ██ ██████  ██ ██      █████
+██  ██  ██ ██    ██ ██   ██ ██ ██      ██
+██      ██  ██████  ██████  ██ ███████ ███████
+*/
+
+
 @media all and (max-width:1440px)
 {
   .menu {
