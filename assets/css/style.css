@@ -189,29 +189,33 @@ section {
 ██   ██ ███████ ██████  ███████ ██   ██  ██████  ███████ ██      ██ ███████ ██   ████    ██    ███████
 */
 #hebergements {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 25px;
 }
-.liste_hebergements .titre {
-  position: absolute;
-  margin-left: 25px;
+.liste_hebergements header {
+  margin-left: 20px;
 }
 .liste_hebergements {
   background-color: #F2F2F2;
-  padding-left: 15px;
-  display: flex;
-  flex-flow: row wrap;
-  width: 70%;
+  padding-left: 10px;
   border-radius: 10px 10px 10px 10px;
+  padding-right: 10px;
+}
+.liste_hebergements .liste_article {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap:20px;
+  row-gap:40px;
 }
 .liste_hebergements article {
   width: 370px;
   height: 246px;
   border-radius: 10px 10px 10px 10px;
-  margin-left: 20px;
-  margin-bottom: 25px;
-  margin-top: 60px;
+  margin-left: 15px;
+  margin-right: 15px;
   border: 5px solid white;
+  box-shadow: 10px 10px 20px -15px rgba(0,0,0,0.75);
 }
 .liste_hebergements article img {
   width: 370px;
@@ -238,7 +242,19 @@ section {
   margin-bottom: auto;
   margin-left: 5px;
 }
+.liste_hebergements article ul  {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: 0px;
+  margin-top: auto;
+}
 .liste_hebergements article .fas.fa-star {
+  margin-left: 5px;
+  margin-top: 15px;
+  color: #0065fc;
+}
+.liste_hebergements article .far.fa-star {
   margin-left: 5px;
   margin-top: 15px;
   color: #F2F2F2;
@@ -246,19 +262,27 @@ section {
 .liste_hebergements p {
   margin-left: 20px;
 }
-.description .etoile-3 .fas.fa-star {
-  color: red;
-}
 .populaire {
   background-color: #F2F2F2;
-  margin-left: 20px;
   border-radius: 10px 10px 10px 10px;
-  width: 30%;
-  display: flex;
-  flex-flow: column wrap;
+  display: grid;
+  padding-right: 25px;
 }
-.populaire .titre h3 {
+.populaire header {
+  display: flex;
+  flex-direction: row;
+  height: 55px;
+}
+.populaire header h3 {
   margin-left: 25px;
+}
+.populaire article {
+  width: 460px;
+  height: 150px;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 25px;
+  border: 5px solid white;
+  box-shadow: 10px 10px 20px -15px rgba(0,0,0,0.75);
 }
 .populaire article h3 {
   margin-left: 15px;
@@ -269,8 +293,19 @@ section {
   margin-bottom: auto;
   margin-left: 15px;
 }
+.populaire article ul  {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin-left: auto;
+  padding: 0px;
+}
 .populaire article .fas.fa-star {
-  color: blue;
+  color: #0065fc;
+  margin-left: 5px;
+}
+.populaire article .far.fa-star {
+  color: #F2F2F2;
   margin-left: 5px;
 }
 .populaire article .etoile {
@@ -278,19 +313,6 @@ section {
   flex-direction: row;
   margin-left: 10px;
   margin-top: 45px;
-}
-.populaire .titre {
-  display: flex;
-  flex-direction: row;
-}
-.populaire article {
-  width: 460px;
-  height: 150px;
-  border-radius: 10px 10px 10px 10px;
-  margin-left: 25px;
-  margin-bottom: 25px;
-  margin-top: 10px;
-  border: 5px solid white;
 }
 .populaire article img {
   width: 225px;
@@ -310,8 +332,14 @@ section {
 .fas.fa-chart-line {
   margin-top: 25px;
   margin-left: 280px;
+  margin-bottom: 0px;
 }
-
+.liste_hebergements figure {
+  margin:0px;
+}
+.populaire figure {
+  margin:0px;
+}
 
 
 
@@ -337,8 +365,5 @@ section {
 {
   .menu {
     margin-left: 45%;
-  }
-  .liste {
-    width: 60%;
   }
 }
