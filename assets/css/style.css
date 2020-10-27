@@ -190,7 +190,7 @@ section {
 */
 #hebergements {
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns:repeat(3, 1fr);
   grid-gap: 25px;
 }
 .liste_hebergements header {
@@ -204,32 +204,56 @@ section {
 }
 .liste_hebergements .liste_article {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns:repeat(3, 1fr);
   column-gap:20px;
   row-gap:40px;
 }
 .liste_hebergements article {
   width: 370px;
-  height: 246px;
+  height: 250px;
   border-radius: 10px 10px 10px 10px;
   margin-left: 15px;
   margin-right: 15px;
   border: 5px solid white;
   box-shadow: 10px 10px 20px -15px rgba(0,0,0,0.75);
 }
-.liste_hebergements article img {
-  width: 370px;
-  border-radius: 5px 5px;
-  position: absolute;
-  z-index: 1;
-}
 .liste_hebergements .description {
   position: absolute;
   z-index: 2;
   background-color: white;
-  margin-top:160px;
+  margin-top:164px;
   width: 370px;
   height: 87px;
+}
+.liste_hebergements article.cannebiere {
+  background-image: url("../img/la_cannebiere.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.liste_hebergements article.hotel_port {
+  background-image: url("../img/hotel_port.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.liste_hebergements article.hotel_mouettes {
+  background-image: url("../img/hotel_mouettes.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.liste_hebergements article.hotel_mer {
+  background-image: url("../img/hotel_mer.jpg");
+  background-size: cover;
+  background-position: bottom;
+}
+.liste_hebergements article.auberge_panier {
+  background-image: url("../img/auberge_panier.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.liste_hebergements article.hotel_anima {
+  background-image: url("../img/hotel_anima.jpg");
+  background-size: cover;
+  background-position: bottom;
 }
 .liste_hebergements article h4 {
   margin-top: 5px;
@@ -286,6 +310,8 @@ section {
 }
 .populaire article h3 {
   margin-left: 15px;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 .populaire article p {
   font-size: 12px;
@@ -308,6 +334,9 @@ section {
   color: #F2F2F2;
   margin-left: 5px;
 }
+.populaire article.au_coeur_eau .etoile {
+  margin-top: 30px;
+}
 .populaire article .etoile {
   display: flex;
   flex-direction: row;
@@ -321,13 +350,28 @@ section {
   position: absolute;
   z-index: 1;
 }
+.populaire article.hotel_soleil {
+  background-image: url("../img/hotel_soleil.jpg");
+  background-size: contain;
+  background-position: left;
+}
+.populaire article.au_coeur_eau {
+  background-image: url("../img/au_coeur_eau.jpg");
+  background-size: contain;
+  background-position: left;
+}
+.populaire article.hotel_tt_bleu_blanc {
+  background-image: url("../img/hotel_tt_bleu_blanc.jpg");
+  background-size: 150px;
+  background-position: left;
+}
 .populaire .description {
   position: absolute;
-  z-index: 2;
   background-color: white;
   width: 310px;
-  height: 150px;
+  height: 135px;
   margin-left: 150PX;
+  padding-top: 15px;
 }
 .fas.fa-chart-line {
   margin-top: 25px;
@@ -340,10 +384,84 @@ section {
 .populaire figure {
   margin:0px;
 }
+/*
+ █████   ██████ ████████ ██ ██    ██ ██ ████████ ███████ ███████
+██   ██ ██         ██    ██ ██    ██ ██    ██    ██      ██
+███████ ██         ██    ██ ██    ██ ██    ██    █████   ███████
+██   ██ ██         ██    ██  ██  ██  ██    ██    ██           ██
+██   ██  ██████    ██    ██   ████   ██    ██    ███████ ███████
+*/
 
-
-
-
+.liste_activites {
+  display:grid;
+  grid-gap:30px;
+  grid-template-columns:repeat(4, 1fr);
+}
+.liste_activites .deux {
+  display:grid;
+  grid-gap:30px;
+  height:500px;
+}
+.liste_activites article {
+  background-color:red;
+  border-radius: 10px 10px 10px 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  box-shadow: 10px 10px 20px -15px rgba(0,0,0,0.75);
+}
+.liste_activites article.vieux_port {
+  background-image: url("../img/vieux_port.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.liste_activites article.fort {
+  background-image: url("../img/fort.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.liste_activites article.frioul {
+  background-image: url("../img/frioul.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.liste_activites article.calanques {
+  background-image: url("../img/calanques.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.liste_activites article.notre_dame {
+  background-image: url("../img/notre_dame.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.liste_activites article.longchamp {
+  background-image: url("../img/parc_longchamp.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.liste_activites .description {
+  position: absolute;
+  background-color: white;
+  margin-top:440px;
+  height: 60px;
+  width: 395px;
+  border-radius: 0px 0px 10px 10px;
+}
+.liste_activites .deux .description {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+  margin-top:180px;
+  height: 60px;
+  width: 395px;
+  border-radius: 0px 0px 10px 10px;
+}
+.liste_activites .description h3 {
+  margin-left: 15px;
+}
+.liste_activites figure {
+  margin:0px;
+}
 
 
 
