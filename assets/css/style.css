@@ -75,9 +75,10 @@ header {
 ███████ ███████  ██████    ██    ██  ██████  ██   ████
 */
 section {
+  margin: 40px 50px 0 50px;
+}
+footer {
   margin-top: 40px;
-  margin-left: 50px;
-  margin-right: 50px;
 }
 /*
 ██████  ███████  ██████ ██   ██ ███████ ██████   ██████ ██   ██ ███████
@@ -111,8 +112,7 @@ section {
 }
 .fas.fa-info {
   color: #0065fc;
-  margin-left:8px;
-  margin-top: 2px;
+  margin: 2px 0 0 8px;
 }
 .cercle {
   height: 22px;
@@ -141,26 +141,19 @@ section {
   flex-direction: row;
 }
 .filtres p {
-  margin-top: 8px;
-  margin-bottom: 0px;
-  margin-right: 10px;
-  margin-left: 5px;
+  margin: 8px 10px 0 5px;
 }
 .fas.fa-money-bill-wave {
-  margin-left: 8px;
-  margin-top: 9px;
+  margin: 9px 0 0 8px;
 }
 .fas.fa-child {
-  margin-left: 11px;
-  margin-top: 10px;
+  margin: 10px 0 0 11px;
 }
 .fas.fa-dog {
-  margin-left: 8px;
-  margin-top: 9px;
+  margin: 9px 0 0 8px;
 }
 .fas.fa-heart {
-  margin-left: 9px;
-  margin-top: 10px;
+  margin: 10px 0 0 9px;
 }
 .filtres .fas {
     color: #0065fc;
@@ -175,7 +168,7 @@ section {
 .infos {
   display: flex;
   flex-direction: row;
-    margin-top: 15px;
+  margin-top: 15px;
 }
 .infos p {
   margin-top: 3px;
@@ -212,8 +205,7 @@ section {
   width: 370px;
   height: 250px;
   border-radius: 10px 10px 10px 10px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0 15px 0 15px;
   border: 5px solid white;
   box-shadow: 10px 10px 20px -15px rgba(0,0,0,0.75);
 }
@@ -256,15 +248,11 @@ section {
   background-position: bottom;
 }
 .liste_hebergements article h4 {
-  margin-top: 5px;
-  margin-bottom: auto;
-  margin-left: 5px;
+  margin: 5px 0 auto 5px;
 }
 .liste_hebergements article p {
   font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: auto;
-  margin-left: 5px;
+  margin: 10px 0 auto 5px;
 }
 .liste_hebergements article ul  {
   display: flex;
@@ -274,13 +262,11 @@ section {
   margin-top: auto;
 }
 .liste_hebergements article .fas.fa-star {
-  margin-left: 5px;
-  margin-top: 15px;
+  margin: 15px 0 0 5px;
   color: #0065fc;
 }
 .liste_hebergements article .far.fa-star {
-  margin-left: 5px;
-  margin-top: 15px;
+  margin: 15px 0 0 5px;
   color: #F2F2F2;
 }
 .liste_hebergements p {
@@ -309,15 +295,11 @@ section {
   box-shadow: 10px 10px 20px -15px rgba(0,0,0,0.75);
 }
 .populaire article h3 {
-  margin-left: 15px;
-  margin-top: 0px;
-  margin-bottom: 5px;
+  margin: 0 5px 0 15px;
 }
 .populaire article p {
   font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: auto;
-  margin-left: 15px;
+  margin: 10px 0 auto 15px;
 }
 .populaire article ul  {
   display: flex;
@@ -340,8 +322,7 @@ section {
 .populaire article .etoile {
   display: flex;
   flex-direction: row;
-  margin-left: 10px;
-  margin-top: 45px;
+  margin: 45px 0 0 10px;
 }
 .populaire article img {
   width: 225px;
@@ -374,9 +355,7 @@ section {
   padding-top: 15px;
 }
 .fas.fa-chart-line {
-  margin-top: 25px;
-  margin-left: 280px;
-  margin-bottom: 0px;
+  margin: 25px 0 0 280px;
 }
 .liste_hebergements figure {
   margin:0px;
@@ -405,8 +384,7 @@ section {
 .liste_activites article {
   background-color:red;
   border-radius: 10px 10px 10px 10px;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 0 15px 0 15px;
   box-shadow: 10px 10px 20px -15px rgba(0,0,0,0.75);
 }
 .liste_activites article.vieux_port {
@@ -462,8 +440,23 @@ section {
 .liste_activites figure {
   margin:0px;
 }
+/*
+███████  ██████   ██████  ████████ ███████ ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+█████   ██    ██ ██    ██    ██    █████   ██████
+██      ██    ██ ██    ██    ██    ██      ██   ██
+██       ██████   ██████     ██    ███████ ██   ██
+*/
 
-
+footer {
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap:20px;
+  background-color: #F2F2F2;
+}
+footer div {
+  margin: 50px 0 50px 70px;
+}
 
 
 
