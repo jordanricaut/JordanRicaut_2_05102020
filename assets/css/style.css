@@ -18,13 +18,12 @@ body {
 ██   ██ ███████ ██   ██ ██████  ███████ ██   ██
 */
 header {
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
 .logo {
   width: 100px;
-  margin-left: 50px;
-  margin-top: 20px;
+  margin: 20px 0 0 50px;
 }
 /*
 ███    ███ ███████ ███    ██ ██    ██
@@ -111,8 +110,7 @@ i.fas.fa-search {
 .fas.fa-map-marker-alt {
   background-color: #f2f2f2;
   border-radius: 10px 0px 0px 10px;
-  padding: 10.5px 15px 13px 15px;
-  margin-right:-5px;
+  padding: 10.5px 10px 13px 15px;
 }
 .fas.fa-info {
   color: #0065fc;
@@ -120,7 +118,7 @@ i.fas.fa-search {
 }
 .cercle {
   height: 22px;
-  width:22px;
+  width: 22px;
   border: 2px solid #f2f2f2;
   border-radius: 50%;
 }
@@ -160,13 +158,13 @@ i.fas.fa-search {
   margin: 10px 0 0 9px;
 }
 .filtres .fas {
-    color: #0065fc;
+  color: #0065fc;
 }
 .filtres .cercle {
   border: solid 0px #F2F2F2;
   background-color: #DEEBFF;
-  height:35px;
-  width:35px;
+  height: 35px;
+  width: 35px;
   border-radius: 50%;
 }
 .infos {
@@ -175,8 +173,7 @@ i.fas.fa-search {
   margin-top: 15px;
 }
 .infos p {
-  margin-top: 3px;
-  margin-left: 5px;
+  margin: 3px 0 0 5px;
 }
 /*
 ██   ██ ███████ ██████  ███████ ██████   ██████  ███████ ███    ███ ███████ ███    ██ ████████ ███████
@@ -187,7 +184,7 @@ i.fas.fa-search {
 */
 #hebergements {
   display: grid;
-  grid-template-columns:2fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-gap: 25px;
 }
 .liste_hebergements h4 {
@@ -201,8 +198,7 @@ i.fas.fa-search {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 0 40px 0 40px;
 }
 .liste_hebergements article {
   border-radius: 30px 30px 30px 30px;
@@ -213,7 +209,7 @@ i.fas.fa-search {
   background-color: white;
 }
 .liste_hebergements figure {
-  margin:0px;
+  margin: 0px;
   flex-grow: 1;
 }
 .liste_hebergements figure img {
@@ -223,13 +219,12 @@ i.fas.fa-search {
   border-radius: 25px 25px 0px 0px;
 }
 .liste_hebergements .description {
-  margin-top: -10px;
-  margin-bottom: -6%;
+  display: flex;
+  flex-direction: column;
   border-radius: 0px 0px 30px 30px;
 }
 .liste_hebergements article h4 {
   margin: 5px 0 auto 15px;
-  padding-top: 10px;
 }
 .liste_hebergements article p {
   font-size: 12px;
@@ -241,7 +236,6 @@ i.fas.fa-search {
   list-style-type: none;
   margin-top: 0px;
   padding-left: 10px;
-  padding-bottom: 10px;
 }
 .liste_hebergements article .fas.fa-star {
   margin: 5px 0 0 5px;
@@ -260,7 +254,6 @@ i.fas.fa-search {
 .populaire {
   background-color: #F2F2F2;
   border-radius: 20px 20px 20px 20px;
-  padding-right: 25px;
 }
 .populaire header {
   display: flex;
@@ -271,18 +264,16 @@ i.fas.fa-search {
   margin: 40px 0 40px 40px;
 }
 .fas.fa-chart-line {
-  margin: 40px 0 0 280px;
+  margin: 40px 0 0 auto;
 }
 .populaire article {
   border-radius: 30px 30px 30px 30px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin: 0 40px 0 40px;
   border: 5px solid white;
   box-shadow: 10px 10px 20px -15px rgba(0,0,0,0.75);
   display: flex;
   flex-direction: row;
   background-color: white;
-  height: 180px;
 }
 .populaire article h3 {
   margin: 15px 5px 0 15px;
@@ -296,16 +287,12 @@ i.fas.fa-search {
   display: flex;
   flex-direction: row;
   list-style-type: none;
-  margin-left: auto;
   padding: 0px;
-}
-.populaire article.au_coeur_eau .etoile {
-  margin-top: 60px;
 }
 .populaire article .etoile {
   display: flex;
   flex-direction: row;
-  margin: 80px 0 0 10px;
+  margin-left: 10px;
 }
 .populaire article .fas {
   color: #0065fc;
@@ -323,6 +310,8 @@ i.fas.fa-search {
 }
 .populaire .description {
   border-radius: 0px 25px 25px 0px;
+  display: flex;
+  flex-direction: column;
 }
 .populaire figure {
   margin:0px;
@@ -341,9 +330,9 @@ i.fas.fa-search {
 */
 
 .liste_activites {
-  display:grid;
-  grid-gap:30px;
-  grid-template-columns:repeat(4, 1fr);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
 }
 .liste_activites article {
   border-radius: 30px 30px 30px 30px;
@@ -365,20 +354,20 @@ i.fas.fa-search {
   background-color: white;
 }
 .liste_activites .col-4 {
-  display:flex;
-  grid-gap:30px;
+  display: flex;
+  grid-gap: 30px;
   flex-direction: column;
 }
 .liste_activites .col-2 {
-  display:flex;
-  grid-gap:30px;
+  display: flex;
+  grid-gap: 30px;
   flex-direction: column;
 }
 .liste_activites .description h3 {
   margin-left: 15px;
 }
 .liste_activites figure {
-  margin:0px;
+  margin: 0px;
   flex-grow: 1;
 }
 .liste_activites .fort figure {
@@ -399,9 +388,9 @@ i.fas.fa-search {
 */
 
 footer {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap:20px;
+  grid-gap: 20px;
   background-color: #F2F2F2;
 }
 footer div {
@@ -415,8 +404,16 @@ footer div {
 ██  ██  ██ ██    ██ ██   ██ ██ ██      ██
 ██      ██  ██████  ██████  ██ ███████ ███████
 */
+/*
+ ██████  ███████  ██████
+██       ██      ██  ████
+███████  ███████ ██ ██ ██
+██    ██      ██ ████  ██
+ ██████  ███████  ██████
+*/
 
-@media all and (max-width:480px)
+
+@media all and (max-width:650px)
 {
   body {
     margin: 0px;
@@ -443,22 +440,14 @@ footer div {
     text-align: center;
     flex: 1 1;
   }
-  .menu ul:hover {
-    border-top: none;
-  }
-  .menu li:hover {
-    border-top: none;
-    border-bottom: solid #0065fc;
-    color: #0065fc;
-  }
   .inscription {
     position: absolute;
-    left: 280px;
+    right: 20px;
     top: 30px;
   }
   li.inscription {
     border-bottom: none;
-        padding: 0;
+    padding: 0;
   }
   #recherche h2 {
     margin-left: 20px;
@@ -488,7 +477,7 @@ footer div {
   .filtres ul {
     flex-flow: wrap;
     padding-left: 0px;
-    grid-gap:15px;
+    grid-gap: 15px;
   }
   .filtres h4 {
     margin-bottom: 0px;
@@ -505,8 +494,7 @@ footer div {
     margin-left: 20px;
   }
   .populaire article {
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px 0 20px;
     height: 140px;
   }
   .populaire article img {
@@ -514,7 +502,7 @@ footer div {
     width: 140px;
   }
   .populaire article h3 {
-    font-size: 15px;
+    font-size: 16px;
   }
   .populaire article .etoile {
     margin-top: 30px;
@@ -522,11 +510,11 @@ footer div {
   .populaire article.au_coeur_eau .etoile {
     margin-top: 30px;
   }
+  .fas.fa-chart-line {
+    padding-right: 20px;
+  }
   .liste_populaire {
     padding-bottom: 30px;
-  }
-  .fas.fa-chart-line {
-    margin-left: 150px;
   }
   .liste_hebergements {
     order: 2;
@@ -542,14 +530,12 @@ footer div {
     height: 140px;
   }
   .liste_hebergements .liste_article {
-    grid-template-columns:1fr;
-    margin-left: 20px;
-    margin-right: 20px;
+    grid-template-columns: 1fr;
+    margin: 0 20px 0 20px;
   }
   .liste_activites {
     grid-template-columns: 1fr;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin: 0 20px 0 20px;
   }
   .liste_activites figure {
     height: 140px
@@ -572,5 +558,137 @@ footer div {
   }
   footer div {
     margin: 30px 0 0px 20px;
+  }
+}
+/*
+ ██████  ███████  ██      █████   █████   ██████
+██       ██      ███     ██   ██ ██   ██ ██  ████
+███████  ███████  ██      ██████  █████  ██ ██ ██
+██    ██      ██  ██          ██ ██   ██ ████  ██
+ ██████  ███████  ██      █████   █████   ██████
+*/
+
+
+@media (min-width:651px) and (max-width:980px)
+{
+  .menu {
+    margin-left: auto;
+  }
+  .filtres ul {
+    flex-flow: wrap;
+    grid-gap:15px;
+  }
+  #hebergements {
+    grid-template-columns: 1fr;
+  }
+  .liste_hebergements {
+    order: 2;
+  }
+  .liste_hebergements .liste_article {
+    grid-template-columns: 1fr;
+  }
+  .liste_hebergements figure img {
+    height: 250px;
+  }
+  .populaire article img {
+    height: 150px;
+    width: 150px;
+  }
+  .fas.fa-chart-line {
+    padding-right: 20px;
+  }
+  .liste_activites {
+    grid-template-columns: 1fr;
+  }
+  .liste_activites figure {
+    height: 200px
+  }
+  .liste_activites .fort figure {
+    height: 200px;
+  }
+  .liste_activites .frioul figure {
+    height: 200px
+  }
+  .liste_activites .col-4 figure {
+    height: 200px;
+  }
+  footer {
+    grid-template-columns: 1fr;
+    row-gap: 0px;
+  }
+  footer div {
+    margin: 30px 0 0px 70px;
+  }
+}
+/*
+ █████   █████   ██      ██ ██████  ███████  ██████
+██   ██ ██   ██ ███     ███      ██      ██ ██  ████
+ ██████  █████   ██      ██  █████      ██  ██ ██ ██
+     ██ ██   ██  ██      ██      ██    ██   ████  ██
+ █████   █████   ██      ██ ██████     ██    ██████
+*/
+
+
+@media (min-width:981px) and (max-width:1370px)
+{
+  .menu {
+    margin-left: auto;
+  }
+  .liste_hebergements .liste_article {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .liste_hebergements figure img {
+    height: 130px;
+  }
+  .liste_activites {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .populaire article {
+    margin: 0 15px 0 15px;
+    height: 130px;
+  }
+  .populaire article img {
+    height: 130px;
+    width: 110px;
+  }
+  .populaire article h3 {
+    font-size: 13px;
+  }
+  .fas.fa-chart-line {
+    padding-right: 20px;
+  }
+}
+/*
+ ██ ██████  ███████  ██      ██  ██████   ██████   ██████
+███      ██      ██ ███     ███ ██       ██  ████ ██  ████
+ ██  █████      ██   ██      ██ ███████  ██ ██ ██ ██ ██ ██
+ ██      ██    ██    ██      ██ ██    ██ ████  ██ ████  ██
+ ██ ██████     ██    ██      ██  ██████   ██████   ██████
+*/
+
+
+@media (min-width:1371px) and (max-width:1600px)
+{
+  .menu {
+    margin-left: auto;
+  }
+  .fas.fa-chart-line {
+    padding-right: 20px;
+  }
+}
+/*
+██   ██ ██
+ ██ ██  ██
+  ███   ██
+ ██ ██  ██
+██   ██ ███████
+*/
+@media (min-width:1600px)
+{
+  .menu {
+    margin-left: auto;
+  }
+  .fas.fa-chart-line {
+    padding-right: 20px;
   }
 }
