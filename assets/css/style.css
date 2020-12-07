@@ -142,6 +142,10 @@ i.fas.fa-search {
   display: flex;
   flex-direction: row;
 }
+.filtres li:hover {
+  border: solid 2px #0065fc;
+  box-shadow: 10px 10px 25px -12px rgba(0, 0, 0, 0.75);
+}
 .filtres p {
   margin: 8px 10px 0 5px;
 }
